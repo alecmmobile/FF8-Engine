@@ -10,7 +10,8 @@ config_version=4
 
 [application]
 
-config/name="godot_files"
+config/name="FF8_Godot_Remake"
+config/description="Fan project to remake Final Fantasy 8 using Godot."
 config/icon="res://icon.png"
 
 [physics]
