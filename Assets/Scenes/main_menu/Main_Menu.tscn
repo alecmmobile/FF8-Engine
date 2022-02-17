@@ -1,5 +1,73 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/UI_Themes/themes/ff8_menu_theme.tres" type="Theme" id=1]
 
 [node name="Main_Menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 96.0
+margin_bottom = 189.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel_Label" type="Label" parent="PanelContainer/VBoxContainer"]
+margin_top = -6.0
+margin_right = 89.0
+margin_bottom = 12.0
+theme = ExtResource( 1 )
+text = "HELP"
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer"]
+margin_top = 16.0
+margin_right = 89.0
+margin_bottom = 46.0
+theme = ExtResource( 1 )
+text = "Junction"
+flat = true
+
+[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer"]
+margin_top = 50.0
+margin_right = 89.0
+margin_bottom = 80.0
+theme = ExtResource( 1 )
+text = "Junction"
+flat = true
+
+[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer"]
+margin_top = 84.0
+margin_right = 89.0
+margin_bottom = 114.0
+theme = ExtResource( 1 )
+text = "Junction"
+flat = true
+
+[node name="Button4" type="Button" parent="PanelContainer/VBoxContainer"]
+margin_top = 118.0
+margin_right = 89.0
+margin_bottom = 148.0
+theme = ExtResource( 1 )
+text = "Junction"
+flat = true
+
+[node name="Button5" type="Button" parent="PanelContainer/VBoxContainer"]
+margin_top = 152.0
+margin_right = 89.0
+margin_bottom = 182.0
+theme = ExtResource( 1 )
+text = "Junction"
+flat = true
