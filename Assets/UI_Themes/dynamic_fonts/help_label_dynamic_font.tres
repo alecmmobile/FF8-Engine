@@ -3,7 +3,9 @@
 [ext_resource path="res://Assets/Fonts/pixeboy_fonts/Pixeboy.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 20
-outline_size = 1
+size = 19
+outline_size = 2
 outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+extra_spacing_char = 1
 font_data = ExtResource( 1 )

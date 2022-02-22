@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Scenes/Menu/MenuContainer.gd" type="Script" id=1]
+[ext_resource path="res://Assets/UI_Themes/themes/ff8_menu_theme.tres" type="Theme" id=2]
+
+[node name="MenuContainer" type="PanelContainer"]
+margin_right = 109.0
+margin_bottom = 205.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 102.0
+margin_bottom = 198.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel_Title" type="Label" parent="VBoxContainer"]
+margin_right = 95.0
+margin_bottom = 11.0
+theme = ExtResource( 2 )
+text = "HELP"
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+margin_top = 15.0
+margin_right = 95.0
+margin_bottom = 47.0
+theme = ExtResource( 2 )
+text = "Junction"
+flat = true
