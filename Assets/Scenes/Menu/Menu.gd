@@ -43,7 +43,11 @@ func _ready():
 #	pass
 
 func _init():
+	var array_size = menu_commands.size()
+	print(array_size)
 	
+	for i in array_size:
+		print(menu_commands[i])
 	
 	#var Panel = panel.new()
 	print (menu_commands)

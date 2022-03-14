@@ -1,0 +1,82 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Scenes/Menu/MenuContainer.gd" type="Script" id=1]
+[ext_resource path="res://Assets/UI_Themes/themes/ff8_menu_theme.tres" type="Theme" id=3]
+[ext_resource path="res://Assets/UI_Themes/themes/ff8_menu_v2_theme.tres" type="Theme" id=4]
+
+[node name="CommandContainer" type="PanelContainer"]
+margin_right = 157.0
+margin_bottom = 100.0
+theme = ExtResource( 4 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 150.0
+margin_bottom = 93.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimeHBox" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 143.0
+margin_bottom = 26.0
+size_flags_horizontal = 9
+custom_constants/separation = 36
+
+[node name="PlayTimeTitleLabel" type="Label" parent="VBoxContainer/TimeHBox"]
+margin_right = 51.0
+margin_bottom = 26.0
+theme = ExtResource( 3 )
+text = "PLAY"
+
+[node name="PlayTimeLabel" type="Label" parent="VBoxContainer/TimeHBox"]
+margin_left = 87.0
+margin_right = 140.0
+margin_bottom = 26.0
+theme = ExtResource( 3 )
+text = "43:45"
+
+[node name="SeedHBox" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 30.0
+margin_right = 143.0
+margin_bottom = 56.0
+size_flags_horizontal = 9
+custom_constants/separation = 36
+
+[node name="SeedTitleLabel" type="Label" parent="VBoxContainer/SeedHBox"]
+margin_right = 48.0
+margin_bottom = 26.0
+theme = ExtResource( 4 )
+text = "SeeD"
+
+[node name="SeedLevelLabel" type="Label" parent="VBoxContainer/SeedHBox"]
+margin_left = 84.0
+margin_right = 108.0
+margin_bottom = 26.0
+theme = ExtResource( 4 )
+text = "18"
+
+[node name="MoneyHBox" type="HBoxContainer" parent="VBoxContainer"]
+margin_left = 73.0
+margin_top = 60.0
+margin_right = 143.0
+margin_bottom = 86.0
+size_flags_horizontal = 8
+
+[node name="SeedTitleLabel" type="Label" parent="VBoxContainer/MoneyHBox"]
+margin_right = 52.0
+margin_bottom = 26.0
+theme = ExtResource( 4 )
+text = "4,555"
+
+[node name="SeedLevelLabel" type="Label" parent="VBoxContainer/MoneyHBox"]
+margin_left = 56.0
+margin_right = 70.0
+margin_bottom = 26.0
+theme = ExtResource( 4 )
+text = "G"

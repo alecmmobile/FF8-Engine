@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/Scenes/Menu/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scenes/Menu/MenuContainer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Scenes/Menu/TimeMoneyContainer.tscn" type="PackedScene" id=3]
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -12,7 +13,6 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
@@ -27,4 +27,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MenuContainer" parent="MenuControl" instance=ExtResource( 2 )]
+[node name="Commands" parent="MenuControl" instance=ExtResource( 2 )]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -109.0
+margin_right = 0.0
+
+[node name="GameTime" parent="MenuControl" instance=ExtResource( 3 )]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -157.0
+margin_top = -100.0
+margin_right = 0.0
+margin_bottom = 0.0
