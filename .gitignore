@@ -1,6 +1,8 @@
 
 # Godot-specific ignores
 .import/
+Gimp_Files/
+sandbox/
 export.cfg
 export_presets.cfg
 
