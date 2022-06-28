@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Resources/Scripts/Guardian_Force.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+available = false
+junctionable = true
+gf_name = ""
+gf_description = "GF Description"
+gf_attack = PoolStringArray( "Thunder Storm" )
+GF_Level = 0
+GF_EXP = 0
+gf_Kills = 0
+gf_ko = 0
+GF_Power = 44
+GF_PowerMod = 0
+GF_LevelMod = 60
+gf_element = 1

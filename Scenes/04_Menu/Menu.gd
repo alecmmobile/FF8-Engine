@@ -3,7 +3,10 @@ extends Control
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-onready var panel  = $PanelContainer
+#onready var panel  = $PanelContainer
+
+# Set any of the given flags from the editor.
+export(int, FLAGS, "Fire", "Water", "Earth", "Wind") var spell_elements = 0
 
 export var menu_commands : PoolStringArray = [
 	"Junction",

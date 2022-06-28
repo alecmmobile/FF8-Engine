@@ -8,11 +8,42 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Resource",
+"class": "Character",
+"language": "GDScript",
+"path": "res://Resources/save_game/Character.gd"
+}, {
+"base": "Resource",
+"class": "Guardiang_Force",
+"language": "GDScript",
+"path": "res://Resources/Scripts/Guardian_Force.gd"
+}, {
+"base": "Resource",
+"class": "SaveGame",
+"language": "GDScript",
+"path": "res://Resources/save_game/SaveGame.gd"
+} ]
+_global_script_class_icons={
+"Character": "",
+"Guardiang_Force": "",
+"SaveGame": ""
+}
+
 [application]
 
-config/name="FF8_Godot_Remake"
+config/name="FF8 Godot"
 config/description="Fan project to remake Final Fantasy 8 using Godot."
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=600
+window/size/height=400
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [physics]
 
